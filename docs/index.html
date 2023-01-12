@@ -18,37 +18,46 @@
   <body>
     <main class="main">
 
-      <div>
-        <input id="password" type="text">
+      <div class="container__password container">
+        <input id="password" class="input" type="text">
       </div>
   
-      <div>
+      <div class=" container">
 
-        <form id="form">
-          <label for="">Character Length<span id="lenght">0</span></label>
-          <input type="range" min="0" max="20" step="1" value="0" id="range">
+        <form id="form" class="container__form">
+          <div>
 
-          <div>
-            <input id="uppercase" type="checkbox">
-            <label for="uppercase">Include Uppercase Letters</label>
-          </div>
-          <div>
-            <input id="lowercase" type="checkbox">
-            <label for="lowercase">Include Lowercase Letters</label>
-          </div>
-          <div>
-            <input id="numbers" type="checkbox">
-            <label for="numbers">Include Numbers</label>
-          </div>
-          <div>
-            <input id="numbers" type="checkbox">
-            <label for="symbols">Include Symbols</label>
+            <label for="">Character Length<span id="lenght" class="span--lenght">0</span></label>
+            <input type="range" min="0" max="20" step="1" value="0" id="range">
           </div>
 
-          <div>
-            <span> STRENGTH </span> 
-            <span>WEAK</span> 
-            <button id="button">Generate <img src="assets/images/icon-arrow-right.svg" alt="arrow right" />
+          <div class="container__checkbox">
+            <div>
+              <input id="uppercase" type="checkbox">
+              <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div>
+              <input id="lowercase" type="checkbox">
+              <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div>
+              <input id="numbers" type="checkbox">
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div>
+              <input id="symbols" type="checkbox">
+              <label for="symbols">Include Symbols</label>
+            </div>
+
+          </div>
+
+          <div class="container__button">
+            <div>
+              <span class="span"> STRENGTH </span> 
+              <span id="strenght"  class="span">TOO SHORT</span> 
+
+            </div>
+            <button id="button" class="button">Generate <img src="assets/images/icon-arrow-right.svg" alt="arrow right" />
             </button>
           </div>
         </form>
